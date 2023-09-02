@@ -1,0 +1,7 @@
+.preferences__container {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+    column-gap: 29px;
+}

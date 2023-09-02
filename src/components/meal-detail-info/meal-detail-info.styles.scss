@@ -1,0 +1,25 @@
+.info__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.info__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CDE4FF;
+    height: 41.78px;
+    width: 41.78px;
+    border-radius: 8.889px;
+
+    &-img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.info__detail {
+    font-weight: 500;
+    font-size: 16px;
+}

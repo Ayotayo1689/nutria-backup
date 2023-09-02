@@ -1,0 +1,69 @@
+@import "./styles/common/pages";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --noutria-green: #31a14b;
+  --noutria-whitedark: #bfbfbf;
+  --noutria-black: #2c2e2d;
+  --noutria-white: #ffffff;
+  --noutria-blue: #5fa9ff;
+  --noutria-mint: #bfe2c7;
+  --noutria-aqua: #cde4ff;
+  --noutria-light: #e0f1e4;
+  --noutria-blackgray: #000000;
+  --noutria-hawaii: #eaf6ed;
+  --noutria-normal: #282929;
+  --noutria-text: #bebebe;
+  --background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--background);
+  height: 100dvh;
+  height: -webkit-fill-available;
+  max-width: 500px;
+  margin-inline: auto;
+  // box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  background: transparent;
+}

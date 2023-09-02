@@ -1,0 +1,20 @@
+.lunch__options {
+
+    &-container {
+        padding-inline: 16px;
+        padding-block: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+.single__mealOption-container {
+    height: fit-content;
+    margin-bottom: 12px;
+}
+
+
+.flex-gap {
+    display: flex;
+}

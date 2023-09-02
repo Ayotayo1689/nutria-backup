@@ -1,0 +1,145 @@
+.profile__setup {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &-container {
+    flex: 1;
+
+    width: 100%;
+  }
+}
+
+.active__component {
+  flex: 1;
+}
+
+.indicators-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 45px;
+  margin-bottom: 73px;
+  justify-content: center;
+
+  &__indicators {
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--noutria-light);
+
+    &__active {
+      background-color: var(--noutria-green);
+    }
+  }
+}
+
+.introduction-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  position: relative;
+
+  &__title {
+    opacity: 0;
+    transform: translate(0, 10px);
+    position: absolute;
+
+    &[data-active="true"] {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  .first-title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #282929;
+    max-width: 324px;
+    text-align: center;
+  }
+
+  .second-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    color: var(--noutria-green);
+  }
+}
+
+.registration-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 339px;
+  // padding-inline: 44px ;
+  margin: 0 auto;
+  text-align: center;
+
+  &__text {
+    &__title {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 39px;
+      color: var(--noutria-normal);
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 auto;
+      color: var(--noutria-text);
+      min-width: 286px;
+    }
+  }
+}
+
+.registration-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 36px;
+  padding-bottom: 33px;
+
+  &__next {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+.congratulations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 175px;
+  text-align: center;
+
+  &__image {
+    margin-bottom: 24px;
+    width: 200px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  &__description {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__button {
+    padding: 5px 65px !important;
+  }
+}

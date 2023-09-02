@@ -1,0 +1,230 @@
+.meal {
+  //   position: relative;
+  //   padding-bottom: 20px;
+
+  &__title {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 25px;
+  }
+
+  &__calories {
+    width: 80px;
+    height: 80px;
+    border-radius: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: -9px;
+    right: 11px;
+
+    &--green {
+      @extend .meal__calories;
+      background: var(--noutria-green);
+      color: #fff;
+    }
+
+    &--blue {
+      @extend .meal__calories;
+      background: var(--noutria-blue);
+      color: #fff;
+    }
+
+    &--mint {
+      @extend .meal__calories;
+      background: var(--noutria-mint);
+      color: var(--noutria-black);
+    }
+
+    &--aqua {
+      @extend .meal__calories;
+      background: var(--noutria-aqua);
+      color: var(--noutria-black);
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__span {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__option {
+      position: absolute;
+    }
+  }
+
+  &__option {
+    color: #fff;
+
+    &__title {
+      position: absolute;
+      left: 24px;
+
+      top: 47px;
+      &__name {
+        font-size: 26px;
+        line-height: 39px;
+        max-width: 157px;
+        font-weight: 500;
+      }
+
+      &__sides {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    &__time {
+      left: 24px;
+
+      position: absolute;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      bottom: 24px;
+    }
+  }
+
+  &__image {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 15px;
+    right: 17px;
+  }
+}
+
+.home {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 40px 0;
+
+  &__content {
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .search {
+        position: relative;
+
+        &__input {
+          border-radius: 24px;
+          padding: 15px 16px 15px 46px;
+        }
+
+        &__icon {
+          height: 16px;
+          width: 16px;
+          position: absolute;
+        }
+
+        .search {
+          left: 16px;
+          bottom: 16px;
+        }
+
+        .filter {
+          bottom: 15px;
+          right: 24px;
+        }
+      }
+
+      &__header {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 39px;
+        color: var(--noutria-green);
+        max-width: 223px;
+      }
+
+      &__intro {
+        display: flex;
+        justify-content: space-between;
+
+        &__greeting {
+          .greeting-name {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            color: var(--noutria-blackgray);
+          }
+
+          .greeting-time {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--noutria-blackgray);
+          }
+        }
+        &__image {
+          height: 40px;
+          width: 40px;
+          background-color: var(--noutria-mint);
+          padding: 8px;
+          border-radius: 50%;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+
+    .meal-indicators {
+      margin-top: 16px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--noutria-mint);
+
+      &__active {
+        width: 53px;
+        background: var(--noutria-green);
+        border-radius: 24px;
+      }
+    }
+
+    &__day {
+      margin-top: 16px;
+
+      &__meals {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+
+        &__meal {
+          flex-shrink: 0;
+          scroll-snap-align: start;
+          width: 100%;
+        }
+      }
+
+      &__indicator {
+        display: flex;
+        gap: 4px;
+        justify-content: center;
+      }
+    }
+
+    &__meals {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

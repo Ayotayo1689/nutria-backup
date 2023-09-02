@@ -1,0 +1,35 @@
+.goal__option {
+  &-active {
+    background-color: var(--noutria-green) !important;
+    color: white;
+    font-weight: bold;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf6ed;
+    border-radius: 8px;
+    width: 152px;
+    height: 152px;
+    cursor: pointer;
+
+    &:active {
+      background-color: var(--noutria-green);
+    }
+  }
+
+  &-image {
+    height: 50px;
+    width: 40px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+
+  &-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

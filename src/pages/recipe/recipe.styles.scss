@@ -1,0 +1,96 @@
+.recipe__header {
+  background: url("../../assets/images/meal.png");
+  height: 258px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  color: white;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.recipe__overview {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid salmon;
+
+  &-serving {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  &-chef {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &-text {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    font-size: 10.514px;
+    gap: 14.02px;
+    color: gray;
+  }
+}
+
+.recipe__container {
+  margin-top: 24px;
+  margin-inline: 34px;
+
+  &-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &-ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.recipe__procedure {
+  margin-block: 24px;
+
+  &-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  &-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.recipe__button {
+  margin-inline: auto;
+  margin-bottom: 32px;
+}
+
+.back__button {
+  background-color: var(--noutria-green);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

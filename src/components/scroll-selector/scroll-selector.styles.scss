@@ -1,0 +1,44 @@
+.scroll__selector {
+  width: 118px;
+  height: 375px;
+  overflow-y: auto;
+  background-color: #eaf6ed;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 8px;
+  text-align: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll__item-list {
+  padding: 8px;
+
+  &.selected {
+    background: #007bff;
+    color: #fff;
+  }
+}
+
+.list__item {
+  color: black;
+  cursor: pointer;
+}
+
+.item {
+  font-size: 20px;
+  opacity: 50%;
+
+  &.selected {
+    font-size: 26px;
+    opacity: 100%;
+  }
+}
+
+.list__flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

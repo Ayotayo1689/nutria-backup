@@ -1,0 +1,29 @@
+
+.meal__class-container {
+  padding-inline: 16px;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+}
+
+.single__meal-container {
+  background-color: var(--noutria-light);
+  border-radius: 8px;
+}
+
+.single__meal {
+  &-image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &-title {
+    padding: 8px;
+  }
+}
+
+.meal__spacing {
+  display: grid;
+  gap: 8px;
+}
