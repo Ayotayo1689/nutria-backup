@@ -1,0 +1,56 @@
+.meal-header {
+  padding-top: 10px;
+  padding-inline: 40px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px ;
+
+
+  &__content {
+    justify-content: center;
+
+    &__description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__type {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        img {
+          width: 24px;
+        }
+        .content-title {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+          color: var(--noutria-green);
+        }
+      }
+      .content-notification {
+        height: 32px;
+        width: 32px;
+        background-color: var(--noutria-hawaii);
+        padding: 8px;
+        border-radius: 50%;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .content-recommendation {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 6px;
+      color: var(--noutria-green);
+      margin-bottom: 24px;
+    }
+  }
+}

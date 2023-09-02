@@ -1,0 +1,33 @@
+.custom-background {
+  position: relative;
+  display: flex;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+
+  &--green {
+    @extend .background;
+    fill: var(--noutria-green);
+    color: #fff;
+  }
+
+  &--blue {
+    @extend .background;
+    fill: var(--noutria-blue);
+    color: #fff;
+  }
+
+  &--mint {
+    @extend .background;
+    fill: var(--noutria-mint);
+    color: var(--noutria-black);
+  }
+
+  &--aqua {
+    @extend .background;
+    fill: var(--noutria-aqua);
+    color: var(--noutria-black);
+  }
+}

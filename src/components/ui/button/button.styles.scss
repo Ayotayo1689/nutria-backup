@@ -1,0 +1,25 @@
+.base-button {
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+  cursor: pointer;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #31a14b;
+
+  &--primary {
+    @extend .base-button;
+    background: #31a14b;
+    color: var(--noutria-white);
+  }
+  &--secondary {
+    @extend .base-button;
+    border: 1px solid #31a14b;
+    border-radius: 8px;
+  }
+}

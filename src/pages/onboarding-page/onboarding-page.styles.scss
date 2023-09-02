@@ -1,0 +1,41 @@
+.carousel__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100dvh;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.carousel__navigation {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  justify-content: space-between;
+  padding-inline: 18px;
+  padding-block: 4px;
+  margin-bottom: 16px;
+}
+
+.active__dots {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  transition: all .2s ease-out;
+}
+
+.get__started-button {
+  padding-inline: 32px;
+  padding-block: 16px;
+  border-radius: 8rem;
+  font-size: medium;
+  background-color: #31a14b;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next__button {
+  cursor: pointer;
+}

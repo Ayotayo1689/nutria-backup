@@ -1,0 +1,70 @@
+.restaurant__location {
+  &-container {
+    background-color: var(--noutria-light);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--noutria-mint);
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-block: 10px;
+    margin-inline: 21px;
+  }
+}
+
+.restaurant__body {
+  display: flex;
+  justify-content: space-between;
+
+  &-name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &-distance {
+    color: var(--noutria-green);
+  }
+}
+
+.restaurant__address {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  &-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+  }
+
+  &-vicinity {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+  }
+}
+
+.restaurant__ratings {
+  
+  &-text {
+    font-size: 14px;
+  }
+
+  &-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-block: 8px;
+  }
+
+}

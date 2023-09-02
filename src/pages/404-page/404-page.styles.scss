@@ -1,0 +1,15 @@
+.page__notfound-container {
+    padding-inline: 16px;
+    padding-block: 16px;
+    gap: 8px;
+    height: 100vh;
+    border: 1px solid black;
+    background: var(--noutria-light);
+}
+
+.page__notfound-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px
+}
