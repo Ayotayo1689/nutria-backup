@@ -1,0 +1,16 @@
+.stores__nearby {
+  &-container {
+    padding-inline: 16px;
+    padding-top: 20px;
+  }
+
+  &-header {
+    margin-bottom: 25px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+  }
+}

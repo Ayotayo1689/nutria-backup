@@ -1,0 +1,52 @@
+.meal-class {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &__content {
+    display: flex;
+    gap: 24px;
+    &__recommendation {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 1;
+
+      &__meal {
+        position: relative;
+
+        &__image {
+          position: relative;
+        }
+        .meal-image {
+          position: absolute;
+          right: 0;
+          top: 18.28px;
+          right: 8.71px;
+          width: 18px;
+          height: 15px;
+          color: var(--noutria-light);
+        }
+      }
+      &__title {
+        padding: 12.5px 5px;
+        background-color: var(--noutria-hawaii);
+        display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        .option-title {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          max-width: 150px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.preference__option {
+  &-active {
+    background: var(--noutria-green) !important ;
+    color: white;
+    font-weight: bold;
+  }
+  
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf6ed;
+    border-radius: 8px;
+    width: 100%;
+    height: 104px;
+    cursor: pointer;
+    
+    &:active {
+      // background-color: #31A14B;
+    }
+  }
+
+  &-image {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  &-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    width: fit-content;
+  }
+}

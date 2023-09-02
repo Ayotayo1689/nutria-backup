@@ -1,0 +1,16 @@
+.ingredient__detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-image {
+    height: 32px;
+    width: 32px;
+  }
+
+  &-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}

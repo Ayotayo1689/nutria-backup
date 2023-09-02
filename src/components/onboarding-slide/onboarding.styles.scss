@@ -1,0 +1,36 @@
+.onboarding_layout {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid salmom;
+}
+
+.silde__image-container {
+  height: 60vh;
+}
+
+
+
+
+.slide_detail-container {
+  padding-inline: 26.5px;
+
+  .slide_detail {
+    text-align: center;
+    margin-top: 28px;
+
+    &-title {
+      color: #31a14b;
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+    }
+
+    &-description {
+      color: #2c2e2d;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

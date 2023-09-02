@@ -1,0 +1,9 @@
+.app-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__section {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
